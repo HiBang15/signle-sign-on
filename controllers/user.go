@@ -2,7 +2,6 @@ package controllers
 
 import (
 	"github.com/HiBang15/signle-sign-on/constant"
-	"github.com/HiBang15/signle-sign-on/models"
 	"github.com/HiBang15/signle-sign-on/services"
 	"github.com/HiBang15/signle-sign-on/utils"
 	"github.com/gin-gonic/gin"
@@ -11,10 +10,10 @@ import (
 	"net/http"
 )
 
-var userService = services.NewUserService()
+//var userService = services.NewUserService()
 
 func CreateUserAccount(c *gin.Context)  {
-	var userInfoCreate models.CreateUserAccountRequest
+	var userInfoCreate services.CreateUserAccountRequest
 	if err := c.ShouldBindJSON(&userInfoCreate); err != nil {
 		utils.SetResponse(c, http.StatusUnprocessableEntity, err, constant.INVALID_REQUEST_BODY, nil)
 		return
@@ -28,6 +27,7 @@ func CreateUserAccount(c *gin.Context)  {
 
 	//create user via user service
 	//userClient := services.NewUserService()
+	var userService = services.NewUserService()
 	user, err := userService.CreateUserAccount(userInfoCreate)
 	if err != nil {
 		utils.SetResponse(c, http.StatusInternalServerError, err, err.Error(), 0)
@@ -43,6 +43,7 @@ func GetUserAccountByUsernameOrEmail(c *gin.Context) {
 
 	//get user account
 	//userClient := services.NewUserService()
+	var userService = services.NewUserService()
 	res, err := userService.GetUserAccountByEmail(email)
 	if err != nil {
 		log.Printf("get user fails with error: %v", err)

@@ -2,14 +2,16 @@ package router
 
 import (
 	"fmt"
-	"github.com/HiBang15/tulpo-computer.git/api/rest/router/private"
-	"github.com/HiBang15/tulpo-computer.git/api/rest/router/public"
-	"github.com/HiBang15/tulpo-computer.git/cmd/api/docs"
-	"github.com/HiBang15/tulpo-computer.git/constant"
+	"github.com/HiBang15/signle-sign-on/api/rest/router/private"
+	"github.com/HiBang15/signle-sign-on/api/rest/router/public"
+	//"github.com/HiBang15/signle-sign-on/cmd/api/docs"
+	//"github.com/HiBang15/signle-sign-on/constant"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	swaggerFiles "github.com/swaggo/files"
-	ginSwagger "github.com/swaggo/gin-swagger"
+	//ginSwagger "github.com/swaggo/gin-swagger"
+
+	//swaggerFiles "github.com/swaggo/files"
+	//ginSwagger "github.com/swaggo/gin-swagger"
 	"os"
 	"time"
 )
@@ -61,18 +63,19 @@ func Start(environment string) {
 		MaxAge:                 12 * time.Hour,
 	}))
 	// Set a lower memory limit for multipart forms (default is 32 MiB)
-	router.MaxMultipartMemory = int64(constant.MAX_FILE_SIZE) << 20
+	//router.MaxMultipartMemory = int64(constant.MAX_FILE_SIZE) << 20
 
 	// set public folder
-	router.Static("/assets", constant.PUBLIC_ASSETS)
+	//router.Static("/assets", constant.PUBLIC_ASSETS)
 
-	apiRouters := router.Group(docs.SwaggerInfo.BasePath)
+	basePath := os.Getenv("API_VERSION")
+	apiRouters := router.Group(basePath)
 	//set public router
 	public.SetRouter(apiRouters)
 	//set private router
 	private.SetRouter(apiRouters)
 
-	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	//router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	//run
 	router.Run(ListenAddress)
 

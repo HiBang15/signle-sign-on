@@ -2,19 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94758369-4edb-41c9-84c5-82cc96d7b100" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/rest/router/router.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constant/message.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/user_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/commonFunc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/password.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/random.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/transfer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/validate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/rest/router/private/private.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/rest/router/private/private.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/rest/router/public/public.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/rest/router/public/public.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/rest/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/rest/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/postgres/migration/000000_create_extention_table.down.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/postgres/migration/000000_create_extention_table.down.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/executor.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/executor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/go_above_19.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/go_above_19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/go_below_19.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/go_below_19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/unbounded_executor.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/modern-go/concurrent/unbounded_executor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/modern-go/reflect2/type_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/modern-go/reflect2/type_map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/binc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/binc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/cbor.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/cbor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/codecgen.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/codecgen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.not.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.not.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/float.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-dec-map.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-dec-map.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-helper.generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-helper.generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-helper.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-helper.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen.generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen.generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_arrayof_gte_go15.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_arrayof_gte_go15.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_arrayof_lt_go15.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_arrayof_lt_go15.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_fmt_time_gte_go15.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_fmt_time_gte_go15.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_fmt_time_lt_go15.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_fmt_time_lt_go15.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_makemap_gte_go19.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_makemap_gte_go19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_makemap_lt_go19.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_makemap_lt_go19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_maprange_gte_go112.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_maprange_gte_go112.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_maprange_lt_go112.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_maprange_lt_go112.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_unexportedembeddedptr_gte_go110.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_unexportedembeddedptr_gte_go110.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_unexportedembeddedptr_lt_go110.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_unexportedembeddedptr_lt_go110.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_unsupported_lt_go14.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_unsupported_lt_go14.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_vendor_eq_go15.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_vendor_eq_go15.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_vendor_eq_go16.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_vendor_eq_go16.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_vendor_gte_go17.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_vendor_gte_go17.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_vendor_lt_go15.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/goversion_vendor_lt_go15.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_internal.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_internal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_not_unsafe.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_not_unsafe.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_unsafe.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_unsafe.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/json.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/mammoth-test.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/mammoth-test.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/mammoth2-test.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/mammoth2-test.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/msgpack.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/msgpack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/prebuild.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/reader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/register_ext.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/register_ext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/rpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/rpc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/sort-slice.generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/sort-slice.generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/sort-slice.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/sort-slice.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/writer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/modules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/modules.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +104,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
   </component>
   <component name="RecentsManager">
@@ -56,7 +114,16 @@
       <recent name="$PROJECT_DIR$/database/postgres/migration" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build github.com/HiBang15/signle-sign-on">
+    <configuration name="go build github.com/HiBang15/signle-sign-on" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="signle-sign-on" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/HiBang15/signle-sign-on" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="sqlc" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="sqlc" workingDirectory="" arguments="">
         <envs />
@@ -65,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/HiBang15/signle-sign-on" />
         <item itemvalue="Makefile.sqlc" />
       </list>
     </recent_temporary>
@@ -77,21 +145,122 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="2006" height="340" key="GridCell.Tab.0.bottom" timestamp="1620754069654">
+    <state width="2006" height="418" key="GridCell.Tab.0.bottom" timestamp="1621269994371">
       <screen x="0" y="25" width="2048" height="1214" />
     </state>
-    <state width="2006" height="340" key="GridCell.Tab.0.bottom/0.25.2048.1214@0.25.2048.1214" timestamp="1620754069654" />
-    <state width="2006" height="340" key="GridCell.Tab.0.center" timestamp="1620754069653">
+    <state width="2006" height="418" key="GridCell.Tab.0.bottom/0.25.2048.1214@0.25.2048.1214" timestamp="1621269994371" />
+    <state width="2006" height="418" key="GridCell.Tab.0.center" timestamp="1621269994370">
       <screen x="0" y="25" width="2048" height="1214" />
     </state>
-    <state width="2006" height="340" key="GridCell.Tab.0.center/0.25.2048.1214@0.25.2048.1214" timestamp="1620754069653" />
-    <state width="2006" height="340" key="GridCell.Tab.0.left" timestamp="1620754069652">
+    <state width="2006" height="418" key="GridCell.Tab.0.center/0.25.2048.1214@0.25.2048.1214" timestamp="1621269994370" />
+    <state width="2006" height="418" key="GridCell.Tab.0.left" timestamp="1621269994370">
       <screen x="0" y="25" width="2048" height="1214" />
     </state>
-    <state width="2006" height="340" key="GridCell.Tab.0.left/0.25.2048.1214@0.25.2048.1214" timestamp="1620754069652" />
-    <state width="2006" height="340" key="GridCell.Tab.0.right" timestamp="1620754069653">
+    <state width="2006" height="418" key="GridCell.Tab.0.left/0.25.2048.1214@0.25.2048.1214" timestamp="1621269994370" />
+    <state width="2006" height="418" key="GridCell.Tab.0.right" timestamp="1621269994370">
       <screen x="0" y="25" width="2048" height="1214" />
     </state>
-    <state width="2006" height="340" key="GridCell.Tab.0.right/0.25.2048.1214@0.25.2048.1214" timestamp="1620754069653" />
+    <state width="2006" height="418" key="GridCell.Tab.0.right/0.25.2048.1214@0.25.2048.1214" timestamp="1621269994370" />
+    <state width="2006" height="418" key="GridCell.Tab.1.bottom" timestamp="1621269994253">
+      <screen x="0" y="25" width="2048" height="1214" />
+    </state>
+    <state width="2006" height="418" key="GridCell.Tab.1.bottom/0.25.2048.1214@0.25.2048.1214" timestamp="1621269994253" />
+    <state width="2006" height="418" key="GridCell.Tab.1.center" timestamp="1621269994252">
+      <screen x="0" y="25" width="2048" height="1214" />
+    </state>
+    <state width="2006" height="418" key="GridCell.Tab.1.center/0.25.2048.1214@0.25.2048.1214" timestamp="1621269994252" />
+    <state width="2006" height="418" key="GridCell.Tab.1.left" timestamp="1621269994252">
+      <screen x="0" y="25" width="2048" height="1214" />
+    </state>
+    <state width="2006" height="418" key="GridCell.Tab.1.left/0.25.2048.1214@0.25.2048.1214" timestamp="1621269994252" />
+    <state width="2006" height="418" key="GridCell.Tab.1.right" timestamp="1621269994253">
+      <screen x="0" y="25" width="2048" height="1214" />
+    </state>
+    <state width="2006" height="418" key="GridCell.Tab.1.right/0.25.2048.1214@0.25.2048.1214" timestamp="1621269994253" />
+    <state x="725" y="387" width="597" height="490" key="find.popup" timestamp="1621181695434">
+      <screen x="0" y="25" width="2048" height="1214" />
+    </state>
+    <state x="725" y="387" width="597" height="490" key="find.popup/0.25.2048.1214@0.25.2048.1214" timestamp="1621181695434" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/controllers/user.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/controllers/user.go</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/controllers/user.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/user_service.go</url>
+          <line>77</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/user_service.go</url>
+          <line>82</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/user_service.go</url>
+          <line>88</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/user_service.go</url>
+          <line>95</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/user_service.go</url>
+          <line>119</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/models/user.go</url>
+          <line>42</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/models/user.go</url>
+          <line>83</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/models/user.go</url>
+          <line>89</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/models/user.go</url>
+          <line>88</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/api/rest/router/router.go</url>
+          <line>23</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/api/rest/router/router.go</url>
+          <line>24</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/api/rest/router/router.go</url>
+          <line>75</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

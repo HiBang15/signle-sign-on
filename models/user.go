@@ -4,7 +4,6 @@ import (
 	"context"
 	"database/sql"
 	database "github.com/HiBang15/signle-sign-on/database/sqlc"
-	"github.com/HiBang15/signle-sign-on/utils"
 	"log"
 	"time"
 )
@@ -39,10 +38,10 @@ type CreateUserAccountRequest struct {
 	CodeVerifyEmail int32 `json:"code_verify_email"`
 }
 
-func (cnt *Connector) CreateUserAccount(ctx context.Context, request CreateUserAccountRequest) (response UserAccount, err error)  {
-	var user database.UserAccount
+func (cnt *Connector) CreateUserAccount(ctx context.Context, request CreateUserAccountRequest) (response database.UserAccount, err error)  {
+	//var user database.UserAccount
 	err = cnt.execTx(ctx, func(queries *database.Queries) error {
-		user, err = queries.CreateUserAccount(ctx, database.CreateUserAccountParams{
+		response, err = queries.CreateUserAccount(ctx, database.CreateUserAccountParams{
 			FirstName:              sql.NullString{
 				String: request.FirstName,
 				Valid:  true,
@@ -84,26 +83,26 @@ func (cnt *Connector) CreateUserAccount(ctx context.Context, request CreateUserA
 	})
 	if err != nil {
 		log.Println("Create user fail with err: ", err.Error())
-		return UserAccount{}, err
+		return database.UserAccount{}, err
 	}
 	
-	response = utils.ConvertUserAccount(user)
+	//response = utils.ConvertUserAccount(user)
 	return response, nil
 }
 
-func (cnt *Connector)GetUserAccountByEmail(ctx context.Context, email string) (response UserAccount,err error)  {
-	var user database.UserAccount
+func (cnt *Connector)GetUserAccountByEmail(ctx context.Context, email string) (response database.UserAccount, err error)  {
+	//var user database.UserAccount
 	err = cnt.execTx(ctx, func(queries *database.Queries) error {
-		user, err = queries.GetUserAccountByUsernameOrEmail(ctx, email)
+		response, err = queries.GetUserAccountByUsernameOrEmail(ctx, email)
 		return err
 	})
 
 	if err != nil {
 		log.Println("Get user by email fail with err: ", err.Error())
-		return UserAccount{}, err
+		return database.UserAccount{}, err
 	}
 
-	response = utils.ConvertUserAccount(user)
+	//response = utils.ConvertUserAccount(user)
 	return response, nil
 }
 

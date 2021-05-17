@@ -11,6 +11,7 @@ import (
 	"log"
 	"github.com/joho/godotenv"
 	"os"
+	_ "github.com/lib/pq"
 )
 
 var connDB *sql.DB
@@ -41,7 +42,37 @@ func NewUserService() *UserService {
 	return &UserService{Connector: connect}
 }
 
-func (u *UserService) CreateUserAccount(request models.CreateUserAccountRequest) (response models.UserAccount, err error) {
+type UserAccount struct {
+	ID               int32  `json:"id"`
+	FirstName        string `json:"first_name"`
+	LastName         string `json:"last_name"`
+	FullName         string `json:"full_name"`
+	Email            string `json:"email"`
+	Address          string `json:"address"`
+	TimeZone         string `json:"time_zone"`
+	Password         string `json:"password"`
+	PhoneNumber      string `json:"phone_number"`
+	VerifyEmail      bool   `json:"verify_email"`
+	RegistrationTime int64  `json:"registration_time"`
+	CreatedAt        int64  `json:"created_at"`
+	UpdatedAt        int64  `json:"updated_at"`
+}
+
+type CreateUserAccountRequest struct {
+	FirstName       string `json:"first_name"`
+	LastName        string `json:"last_name"`
+	FullName        string `json:"full_name"`
+	Email           string `json:"email"`
+	Address         string `json:"address"`
+	TimeZone        string `json:"time_zone"`
+	Password        string `json:"password"`
+	PasswordCost    string `json:"password_cost"`
+	PhoneNumber     string `json:"phone_number"`
+	AcceptMarketing bool   `json:"accept_marketing"`
+	CodeVerifyEmail int32 `json:"code_verify_email"`
+}
+
+func (u *UserService) CreateUserAccount(request CreateUserAccountRequest) (response models.UserAccount, err error) {
 	log.Println("receive create user account with info: ", request)
 
 	//validate email
@@ -83,16 +114,24 @@ func (u *UserService) CreateUserAccount(request models.CreateUserAccountRequest)
 	codeVerifyEmail := utils.RandomInt32(100000, 999999)
 	request.CodeVerifyEmail = codeVerifyEmail
 
-	userCreated, err := u.Connector.CreateUserAccount(context.Background(), request)
+	var req models.CreateUserAccountRequest
+	err = utils.MapDataToStruct(request, &req)
+
+	userCreated, err := u.Connector.CreateUserAccount(context.Background(), req)
 	if err != nil {
 		log.Println("[UserService][Service] Create user account fail with error: ", err.Error())
 		return models.UserAccount{}, errors.New("Create user account fail with err: "+err.Error())
 	}
 
 	//todo send mail
+	err = utils.MapDataToStruct(userCreated, &response)
+	if err != nil {
+		log.Println(err.Error())
+		return models.UserAccount{}, err
+	}
 
 	log.Println("create account successful!")
-	return userCreated, nil
+	return response, nil
 }
 
 func (u *UserService) GetUserAccountByEmail(email string) (response models.UserAccount, err error) {
@@ -109,5 +148,11 @@ func (u *UserService) GetUserAccountByEmail(email string) (response models.UserA
 		return models.UserAccount{}, errors.New("Get user account fail with err: "+err.Error())
 	}
 
-	return userAccount, nil
+	err = utils.MapDataToStruct(userAccount, &response)
+	if err != nil {
+		log.Println(err.Error())
+		return models.UserAccount{}, err
+	}
+
+	return response, nil
 }
